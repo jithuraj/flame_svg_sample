@@ -16,31 +16,31 @@ class MyGame extends FlameGame {
     final size = Vector2.all(100);
     final position = Vector2.all(100);
     // code from docs
-    final svgComponent = SvgComponent.fromSvg(
-      size,
-      position,
-      svgInstanceaa,
-    );
+    // final svgComponent = SvgComponent.fromSvg(
+    //   size,
+    //   position,
+    //   svgInstanceaa,
+    // );
 
     /// change to fix the eroor
-    // final svgComponent = SvgComponent(
-    //   size: size,
-    //   position: position,
-    //   svg: svgInstanceaa,
-    // );
+    final svgComponent = SvgComponent(
+      size: size,
+      position: position,
+      svg: svgInstanceaa,
+    );
 
     add(svgComponent);
   }
 
-  @override
-  void render(Canvas canvas) {
-    // code from docs
-    Svg svgInstance = Svg('android.svg');
+  // @override
+  // void render(Canvas canvas) {
+  //   // code from docs
+  //   Svg svgInstance = Svg('android.svg');
 
-    final position = Vector2(100, 100);
-    final size = Vector2(300, 300);
+  //   final position = Vector2(100, 100);
+  //   final size = Vector2(300, 300);
 
-    svgInstance.renderPosition(canvas, position, size);
-    super.render(canvas);
-  }
+  //   svgInstance.renderPosition(canvas, position, size);
+  //   super.render(canvas);
+  // }
 }
